@@ -1,0 +1,11 @@
+F:\Network Programming\Network-Programming\Assignments\UDP Client-Server\UDP Client-Server\bin\Debug\UDP Client-Server.exe.config
+F:\Network Programming\Network-Programming\Assignments\UDP Client-Server\UDP Client-Server\bin\Debug\UDP Client-Server.exe
+F:\Network Programming\Network-Programming\Assignments\UDP Client-Server\UDP Client-Server\bin\Debug\UDP Client-Server.pdb
+F:\Network Programming\Network-Programming\Assignments\UDP Client-Server\UDP Client-Server\obj\Debug\Client.csproj.AssemblyReference.cache
+F:\Network Programming\Network-Programming\Assignments\UDP Client-Server\UDP Client-Server\obj\Debug\Client.csproj.SuggestedBindingRedirects.cache
+F:\Network Programming\Network-Programming\Assignments\UDP Client-Server\UDP Client-Server\obj\Debug\UDP_Client_Server.Client.resources
+F:\Network Programming\Network-Programming\Assignments\UDP Client-Server\UDP Client-Server\obj\Debug\UDP_Client_Server.Properties.Resources.resources
+F:\Network Programming\Network-Programming\Assignments\UDP Client-Server\UDP Client-Server\obj\Debug\Client.csproj.GenerateResource.cache
+F:\Network Programming\Network-Programming\Assignments\UDP Client-Server\UDP Client-Server\obj\Debug\Client.csproj.CoreCompileInputs.cache
+F:\Network Programming\Network-Programming\Assignments\UDP Client-Server\UDP Client-Server\obj\Debug\UDP Client-Server.exe
+F:\Network Programming\Network-Programming\Assignments\UDP Client-Server\UDP Client-Server\obj\Debug\UDP Client-Server.pdb
