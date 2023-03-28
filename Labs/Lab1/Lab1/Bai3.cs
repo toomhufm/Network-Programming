@@ -82,6 +82,10 @@ namespace Lab1
             {
                 MessageBox.Show(ex.Message);
             }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         public class NumberException : Exception

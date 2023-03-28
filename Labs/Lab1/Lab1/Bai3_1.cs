@@ -37,12 +37,12 @@ namespace Lab1
         {
             try
             {
-                double n = Double.Parse(numBox.Text);
+                long n = Int64.Parse(numBox.Text);
                 if(n.ToString().Length > 12)
                 {
                     throw new NumException("Number must be less than 12 digits");
                 }
-                NumberToText(n);
+                resultBox.Text = NumberToText(n);
 
             }
             catch (OverflowException)
@@ -60,39 +60,81 @@ namespace Lab1
 
         }
 
-        public string NumberToText(double num)
+        public string NumberToText(Int64 number)
         {
-            
-            string[] singleDigits = new string[] { "không", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín" };
-            string[] places = new string[] { "", "nghìn", "triệu", "tỷ" };
-
+            string[] ones = { "", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín" };
+            string[] tens = { "", "mười", "hai mươi", "ba mươi", "bốn mươi", "năm mươi", "sáu mươi", "bảy mươi", "tám mươi", "chín mươi" };
+            string[] groups = { "", "nghìn", "triệu", "tỷ" };
             string result = "";
-            bool isNegative = false;
-            string snum = num.ToString();
 
-            if(num < 0)
+            // Xử lý trường hợp số bằng 0
+            if (number == 0)
+                return "không";
+
+            // Xử lý trường hợp số âm
+            if (number < 0)
             {
-                num = -num;
-                snum = num.ToString();
-                isNegative = true;
+                result += "âm ";
+                number = -number;
             }
 
-            // hàng đơn vị, hàng chục, hàng trăm
-            int one, ten, hundred;
-            int position = snum.Length;
+            int groupIndex = 0;
 
-            if(position == 0)
+            // Chia số thành các nhóm 3 chữ số, từ phải sang trái
+            while (number > 0)
             {
-                result += singleDigits[0];
-            }
-            else
-            {
-                // Do later
-                return result;
+                long groupValue = number % 1000;
+                number /= 1000;
+
+                if (groupValue > 0)
+                {
+                    string groupString = "";
+
+                    long hundredsDigit = groupValue / 100;
+                    long tensDigit = groupValue % 100 / 10;
+                    long onesDigit = groupValue % 10;
+
+                    // Xử lý chữ số hàng trăm
+                    if (hundredsDigit > 0)
+                        groupString += ones[hundredsDigit] + " trăm ";
+
+                    // Xử lý chữ số hàng chục và hàng đơn vị
+                    if (tensDigit > 0)
+                    {
+                        if (tensDigit == 1)
+                            groupString += "mười ";
+                        else
+                            groupString += tens[tensDigit] + " ";
+                    }
+
+                    if (onesDigit > 0)
+                    {
+                        if (tensDigit == 0 && hundredsDigit > 0)
+                            groupString += "lẻ ";
+                        if (onesDigit == 1 && tensDigit > 1)
+                            groupString += "mốt ";
+                        else if (onesDigit == 5 && (tensDigit > 0 || hundredsDigit > 0))
+                            groupString += "lăm ";
+                        else
+                            groupString += ones[onesDigit] + " ";
+                    }
+
+                    // Thêm đơn vị nhóm vào chuỗi kết quả
+                    groupString += groups[groupIndex];
+
+                    // Nếu chuỗi kết quả đã có giá trị, thêm khoảng trắng trước
+                    if (result.Length > 0)
+                        result = " " + result;
+
+                    // Thêm chuỗi nhóm vào chuỗi kết quả
+                    result = groupString + result;
+                }
+
+                groupIndex++;
             }
 
-            return result;
-
+            // Trả về chuỗi kết quả
+            return result.Trim();
         }
     }
 }
