@@ -1,0 +1,11 @@
+F:\Network Programming\Network-Programming\Assignments\TCP Client Server\TCP Client Server\bin\Debug\TCP Client Server.exe.config
+F:\Network Programming\Network-Programming\Assignments\TCP Client Server\TCP Client Server\bin\Debug\TCP Client Server.exe
+F:\Network Programming\Network-Programming\Assignments\TCP Client Server\TCP Client Server\bin\Debug\TCP Client Server.pdb
+F:\Network Programming\Network-Programming\Assignments\TCP Client Server\TCP Client Server\obj\Debug\Client.csproj.AssemblyReference.cache
+F:\Network Programming\Network-Programming\Assignments\TCP Client Server\TCP Client Server\obj\Debug\Client.csproj.SuggestedBindingRedirects.cache
+F:\Network Programming\Network-Programming\Assignments\TCP Client Server\TCP Client Server\obj\Debug\TCP_Client_Server.Client.resources
+F:\Network Programming\Network-Programming\Assignments\TCP Client Server\TCP Client Server\obj\Debug\TCP_Client_Server.Properties.Resources.resources
+F:\Network Programming\Network-Programming\Assignments\TCP Client Server\TCP Client Server\obj\Debug\Client.csproj.GenerateResource.cache
+F:\Network Programming\Network-Programming\Assignments\TCP Client Server\TCP Client Server\obj\Debug\Client.csproj.CoreCompileInputs.cache
+F:\Network Programming\Network-Programming\Assignments\TCP Client Server\TCP Client Server\obj\Debug\TCP Client Server.exe
+F:\Network Programming\Network-Programming\Assignments\TCP Client Server\TCP Client Server\obj\Debug\TCP Client Server.pdb
