@@ -1,0 +1,21 @@
+Name : Anh Đức
+ID : 21521964
+Phone : 0384831465
+Course 1 : 9
+Course 2 : 10
+Course 3 : 9.5
+Average : 9.5
+Name : Lê Tài
+ID : 21521932
+Phone : 0243456789
+Course 1 : 7
+Course 2 : 6.5
+Course 3 : 9.5
+Average : 7.66666666666667
+Name : Nguyễn Hiếu
+ID : 21521112
+Phone : 0243456321
+Course 1 : 8
+Course 2 : 5.5
+Course 3 : 7.25
+Average : 6.91666666666667
